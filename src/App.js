@@ -6,7 +6,8 @@
 
 import {useEffect, useState} from 'react';
 import searchIcon from './search.svg'
-import MovieCard from './components/MovieCard'
+import MovieCard from './components/MovieCard';
+import Footer from './components/Footer'
 function App(){
  
  // making The Variables for track
@@ -69,7 +70,10 @@ function App(){
       // Init screen raise an msg 
       <div className="empty">
     {searchTerm === '' ? (
+      <>
       <h2>Enter A Movie Name To Search </h2>
+      <Footer />
+      </>
       ):
       //tracking search clicked true and searchTerm isn't equal = condition is true then raise an error
       searchClicked && searchTerm !== '' &&
@@ -80,6 +84,7 @@ function App(){
     <h4>You searched Wrong Movie</h4>
     <p>Search it on</p>
     <button className="btn" onClick={google}>Google</button>
+    <Footer />
     </div>
     </>
     )}

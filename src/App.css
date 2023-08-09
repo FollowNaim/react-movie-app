@@ -222,6 +222,23 @@ h1 {
   opacity: 1;
 }
 
+.Footer{
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.Footer h2{
+  color: white;
+  text-align: center;
+}
+.Footer a{
+  display: block;
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
