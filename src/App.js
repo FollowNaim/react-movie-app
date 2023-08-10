@@ -48,7 +48,7 @@ function App(){
     src={searchIcon}
     alt="Search Icon"
     onClick={()=>searchMovies(searchTerm)}
-    onKeyPress={e=>e.key === 'Enter'?searchMovies(searchTerm):null}
+    onKeyPress={e=>e.key === 13 ?searchMovies(searchTerm):null}
     />
     </div>
     
